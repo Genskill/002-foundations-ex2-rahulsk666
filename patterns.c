@@ -44,7 +44,7 @@ void pattern2(void){
         }
     }
 }
-
+//gcc -o out patterns.c cs50.c
 
 
 
