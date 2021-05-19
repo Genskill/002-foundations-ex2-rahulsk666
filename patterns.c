@@ -1,50 +1,35 @@
-#include <stdio.h>
-#include<cs50.h>
-void pattern1(void);
-void pattern2(void);
-int main(void){
-    int pat = get_int("Enter type of pattern (1 or 2) ");
-    int h = get_int("Number of rows ");
-    switch (pat)
-    {
-    case 1:
-        pattern1();
-        break;
-    case 2:
-        pattern2();
-            break;
-    
-    default:
-        break;
-    }
+#include<stdio.h>
+#include <cs50.h>
+void main(){
+	int option,rows,i,j,k;
+	option=get_int("");
+	rows=get_int("");
+	if(option==1){
+		
+		
+		for(i=0;i<rows;i++){
+			for(j=rows-i;j>0;j--){
+			
+				printf("#");
+				}
+			printf("\n");
+			}
+		
+	}
+	else if(option==2){
+		for(i=0;i<rows;i++){
+			for(j=rows-(i+1),k=0;j>0;k++,j--){
+				
+				printf(" ");
+				}
+			for(j=k;j<rows;j++){
+			printf("#");
+			}
+printf("\n");
+		
+	}
 }
-void pattern1(void){
-     int h = get_int("Number of rows ");
-    int i,j;
-     for ( i=0;i<=h;i++) 
-     {
-         for (j = h;j>=0; j--)
-         {
-             printf("#");
-         }
-        printf("\n");   }
-}
-
-void pattern2(void){
-     int h = get_int("Number of rows ");
-    int i,j,k;
-     for (i=0;i<=h;i++) 
-     {
-         for (j = h-(i+1),k=0; j<0;k++, j--)
-         {
-             printf(" ");
-         }
-        for (j=k;j<h ; j++){
-            printf("#");
-        }
-    }
 }
 //gcc -o out patterns.c cs50.c
-
 
 
