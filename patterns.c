@@ -18,7 +18,7 @@ int main(void){
         break;
     }
 }
-void patter1(void){
+void pattern1(void){
      int h = get_int("Number of rows ");
     int i,j;
      for ( i=0;i<=h;i++) 
@@ -30,7 +30,7 @@ void patter1(void){
         printf("\n");   }
 }
 
-void patter2(void){
+void pattern2(void){
      int h = get_int("Number of rows ");
     int i,j,k;
      for (i=0;i<=h;i++) 
