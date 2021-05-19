@@ -43,5 +43,6 @@ void pattern2(void){
         {
             printf("#");
         }
+    printf("\n");
     }
 }
