@@ -28,7 +28,6 @@ void pattern1(void){
         printf("\n");
     }
 }
-
 void pattern2(void)
 {
      int h = get_int("Number of rows ");
@@ -39,7 +38,8 @@ void pattern2(void)
          {
              printf(" ");
         }
-        for ( j= k;j,h ; j++){
+        for ( j= k;j,h ; j++)
+        {
             printf("#");
         }
     }
