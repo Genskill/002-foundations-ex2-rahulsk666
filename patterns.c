@@ -20,9 +20,10 @@ int main(void){
 }
 void patter1(void){
      int h = get_int("Number of rows ");
-     for (int i=0;i<=h;i++) 
+    int i,j;
+     for ( i=0;i<=h;i++) 
      {
-         for ( int j = h;j>=0; j--)
+         for (j = h;j>=0; j--)
          {
              printf("#");
          }
@@ -31,13 +32,14 @@ void patter1(void){
 
 void patter2(void){
      int h = get_int("Number of rows ");
-     for (int i=0;i<=h;i++) 
+    int i,j,k;
+     for (i=0;i<=h;i++) 
      {
-         for (int  j = h-(i+1),k=0; j<0;k++, j--)
+         for (j = h-(i+1),k=0; j<0;k++, j--)
          {
              printf(" ");
          }
-        for ( int j= k;j<h ; j++){
+        for (j=k;j<h ; j++){
             printf("#");
         }
     }
