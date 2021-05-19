@@ -12,6 +12,7 @@ int main(void){
         break;
     case 2:
         pattern2();
+            break;
     
     default:
         break;
@@ -21,11 +22,12 @@ void patter1(void){
      int h = get_int("Number of rows ");
      for (int i=0;i<=h;i++) 
      {
-         for ( j = h;j>=o; j--)
+         for ( int j = h;j>=0; j--)
          {
              printf("#");
          }
         printf("\n");   }
+}
 
 void patter2(void){
      int h = get_int("Number of rows ");
@@ -35,8 +37,8 @@ void patter2(void){
          {
              printf(" ");
          }
-        for ( j= k;j,h ; j++){
-            printf("")#
+        for ( j= k;j<h ; j++){
+            printf("#");
         }
     }
 
