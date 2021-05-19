@@ -37,7 +37,7 @@ void patter2(void){
          {
              printf(" ");
          }
-        for ( j= k;j<h ; j++){
+        for ( int j= k;j<h ; j++){
             printf("#");
         }
     }
