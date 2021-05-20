@@ -21,9 +21,9 @@ int main(void){
 void pattern1(void){
     int h = get_int("Number of rows ");
     int i,j;
-    for ( i=1;i<=h;i++)
+    for ( i=0;i<=h-1;i++)
     {
-        for ( j =h-(i-1);j>=1; j--)
+        for ( j=h-(i);j>=0; j--)
         {
             printf("#");
         }
