@@ -35,7 +35,7 @@ void pattern2(void){
     int i,j,k;
     for (int i=1;i<=h;i++) 
     {
-        for (j = h-(i+1),k=0; j<0;k++, j--)
+        for (j = h-(i+1),k=0; j<1;k++, j--)
         {
             printf(" ");
         }
