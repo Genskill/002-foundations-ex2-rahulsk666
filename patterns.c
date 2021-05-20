@@ -21,7 +21,7 @@ int main(void){
 void pattern1(void){
     int h = get_int("Number of rows ");
     int i,j;
-    for ( i=0;i<=h;i++)
+    for ( i=1;i<=h;i++)
     {
         for ( j = h;j>=0; j--)
         {
@@ -33,7 +33,7 @@ void pattern1(void){
 void pattern2(void){
     int h = get_int("Number of rows ");
     int i,j,k;
-    for (int i=0;i<=h;i++) 
+    for (int i=1;i<=h;i++) 
     {
         for (j = h-(i+1),k=0; j<0;k++, j--)
         {
