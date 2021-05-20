@@ -23,7 +23,7 @@ void pattern1(void){
     int i,j;
     for ( i=1;i<=h;i++)
     {
-        for ( j = h;j>=0; j--)
+        for ( j =h-(i-1);j>=1; j--)
         {
             printf("#");
         }
